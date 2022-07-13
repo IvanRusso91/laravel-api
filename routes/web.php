@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.welcome');
+// Route::get('/', function () {
+//     return view('guest.welcome');
+// })->name('home');
+
+
+Route::get('/', function(){
+    return view('guest.home');
 })->name('home');
 
 Auth::routes();
